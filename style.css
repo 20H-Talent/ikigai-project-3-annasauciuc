@@ -8,7 +8,7 @@
 
   body {
       font-family: 'Merriweather', serif;
-      color: black;
+      color: rgb(126, 122, 122);
       background-color: white;
   }
 
@@ -17,9 +17,24 @@
       margin: 0px auto;
       text-align: center;
       background-color: #192d47;
-      padding: 10px 0 10px;
+      padding: 20px 0 20px;
+      font-size: 1.3rem;
   }
-  .contact{
+
+  h2 {
+      font-weight: bold;
+      color: #192d47;
+      margin-bottom: 10px;
+  }
+
+  .contact {
+      font-weight: bold;
+      font-size: 1.3rem;
+      color: #192d47;
+  }
+
+  .second {
+      color: #192d47;
       font-weight: bold;
   }
 
@@ -32,7 +47,7 @@
 
   form {
       margin: 50px auto 80px;
-      padding: 0px 20px; 
+      padding: 0px 20px;
       background: white;
       border-radius: 8px;
   }
@@ -56,19 +71,17 @@
   }
 
   input[type="text"], input[type="email"], input[type="number"], input[type="tel"], textarea, select {
-      background: rgba(255, 255, 255, 0.1);
+      background: rgb(221, 217, 217);
       border: none;
-      font-size: 16px;
       height: auto;
       margin: 0;
-      outline: 0;
-      padding: 5px;
+      padding: 10px;
       width: 100%;
-      background-color: #bdc0c0;
+      background-color: #ecf1f1;
       color: #33393d;
-      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+      /* box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset; */
       margin-bottom: 20px;
-      border-radius: 3px;
+      border-radius: 4px;
   }
 
   input[type="number"] {
@@ -100,13 +113,13 @@
   button {
       padding: 19px 39px 18px 39px;
       color: #FFF;
-      background-color: #4bc970;
+      background-color: #47ccae;
       font-size: 18px;
       text-align: center;
-      font-style: normal;
+      font-style: inherit;
       border-radius: 5px;
       width: 100%;
-      border: 1px solid #3ac162;
+      border: 1px solid #2e5b51;
       border-width: 1px 1px 3px;
       box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
       margin-bottom: 10px;
@@ -141,11 +154,6 @@
   label {
       display: block;
       margin-bottom: 8px;
-  }
-
-  label.line {
-      font-weight: 300;
-      display: inline;
   }
 
   @media screen and (min-width: 768px) {
