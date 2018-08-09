@@ -8,7 +8,7 @@
 
   body {
       font-family: 'Merriweather', serif;
-      color: rgb(126, 122, 122);
+      color: rgb(104, 101, 101);
       background-color: white;
   }
 
@@ -29,13 +29,18 @@
 
   .contact {
       font-weight: bold;
-      font-size: 1.3rem;
+      font-size: 1.4rem;
       color: #192d47;
   }
 
   .second {
-      color: #192d47;
       font-weight: bold;
+      font-size: 1.4rem;
+      color: #192d47;
+  }
+
+  .thirth_leg {
+      font-size: 1.2rem;
   }
 
   .row_1 {
@@ -160,7 +165,7 @@
       color: #9ea1a3;
       font-size: 1em;
       font-family: fantasy;
-       font-style: italic; 
+      font-style: italic;
       text-align: right;
   }
 
