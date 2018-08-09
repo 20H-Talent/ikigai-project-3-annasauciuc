@@ -55,18 +55,18 @@
   .line_2 {
       text-align: center;
       padding-bottom: 30px;
-      border-bottom: 3px solid black;
+      border-bottom: 4px solid black;
       margin: 3px auto;
   }
 
   .col_1 {
       padding-top: 20px;
-      border-top: 5px solid black;
+      border-top: 2px solid black;
       margin-top: 2px;
   }
 
   .col_2 {
-      border-top: 5px solid black;
+      border-top: 2px solid black;
       padding-top: 30px;
   }
 
