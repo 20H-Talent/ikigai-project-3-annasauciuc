@@ -40,7 +40,7 @@ h2 {
 
 .contact {
     font-weight: bold;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: #192d47;
 }
 
@@ -55,7 +55,7 @@ h2 {
 
 form {
     margin: 50px auto 80px;
-    padding: 0px 20px;
+    padding: 0px 10px;
     background: white;
     border-radius: 8px;
 }
@@ -68,7 +68,7 @@ form {
 
 .col_2 {
     border-top: 2px solid black;
-    padding-top: 30px;
+    padding-top: 20px;
 }
 
 fieldset {
@@ -113,10 +113,6 @@ select {
 
 select .dropdown {
     width: 100%;
-}
-
-legend.contact {
-    margin: 50px 0;
 }
 
 legend {
