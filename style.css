@@ -35,7 +35,6 @@ h2 {
     text-align: center;
     padding-bottom: 30px;
     border-bottom: 4px solid black;
-    margin: 3px auto;
 }
 
 .contact {
@@ -46,17 +45,14 @@ h2 {
 
 /* Content style */
 
-.row_1 {
+.wrapper {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    margin: 0 auto;
-}
-
-form {
-    margin: 50px auto 80px;
+    margin: 30px auto 80px;
     padding: 0px 10px;
     border-radius: 8px;
+    
 }
 
 .col_1 {
@@ -137,20 +133,21 @@ input[type="radio"] {
 }
 
 input[type="checkbox"]:checked, input[type="radio"]:checked {
-    border: 2px solid #2d3945;
+    border: 1px solid #2d3945;
 }
 
 input[type="checkbox"]:checked:after {
-    content: '✔️';
-    color: black;
+    content: '\2714 \fe0e';
+    color: #2d3945;
     position: absolute;
-    top: 2px;
-    left: 2px;
-    font-size: .6rem;
+    top: 0px;
+    left: 1px;
+    bottom: 4px;
+    font-size: 1.2rem;
 }
 
 input[type="radio"]:checked:after {
-    content: '';
+    content: "";
     position: absolute;
     top: 50%;
     left: 50%;
@@ -180,22 +177,22 @@ input[required]:valid::after {
 background-color:green;
 }  */
 
- /* input[required]:-moz-submit-invalid:-moz-ui-invalid invalid::before,
-input[required]:valid::after{
- 
-  
-    background-color: #2e5b51;
-}  */
-input:invalid::after , input:-moz-ui-invalid {
- border:1px solid red;  
-   
-    outline:red;
-    box-shadow:red;
-    -moz-box-shadow:red;
-    -webkit-box-shadow:red;
-}  
+input[required]:-moz-ui-invalid invalid::before {
+    border: 1px solid red;
+    outline:none;
+    box-shadow:none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-user-focus: ignore;
+}
 
-
+input:invalid::after, input:-moz-ui-invalid::after {
+    border: 1px solid red;
+    outline: red;
+    box-shadow: red;
+    -moz-box-shadow: red;
+    -webkit-box-shadow: red;
+}
 
 select {
     padding: 6px;
@@ -248,7 +245,7 @@ footer {
 
 @media screen and (min-width: 768px) {
     /* Content style */
-    form {
+    .wrapper {
         max-width: 70%;
     }
     .col_1 {
