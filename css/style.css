@@ -25,7 +25,7 @@ h1 {
     font-size: 1.3rem;
 }
 
-h2 {
+h3 {
     font-weight: bold;
     color: #192d47;
     margin-bottom: 10px;
@@ -52,7 +52,6 @@ h2 {
     margin: 30px auto 80px;
     padding: 0px 10px;
     border-radius: 8px;
-    
 }
 
 .col_1 {
@@ -108,6 +107,14 @@ input[type="text"], input[type="email"], input[type="number"], input[type="tel"]
     border-radius: 4px;
 }
 
+input[type="checkbox"] {
+    border-radius: 4px;
+}
+
+input[type="radio"] {
+    border-radius: 100%;
+}
+
 input[type="number"] {
     width: 30%;
 }
@@ -122,14 +129,7 @@ input[type="checkbox"], input[type="radio"] {
     border: none;
     outline: none;
     position: relative;
-}
-
-input[type="checkbox"] {
-    border-radius: 3px;
-}
-
-input[type="radio"] {
-    border-radius: 50%;
+    vertical-align: middle;
 }
 
 input[type="checkbox"]:checked, input[type="radio"]:checked {
@@ -177,10 +177,10 @@ input[required]:valid::after {
 background-color:green;
 }  */
 
-input[required]:-moz-ui-invalid invalid::before {
+input[required]invalid::before {
     border: 1px solid red;
-    outline:none;
-    box-shadow:none;
+    outline: none;
+    box-shadow: none;
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
     -moz-user-focus: ignore;
@@ -195,6 +195,8 @@ input:invalid::after, input:-moz-ui-invalid::after {
 }
 
 select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
     padding: 6px;
     height: 32px;
     border-radius: 2px;
@@ -217,16 +219,13 @@ button {
     border-width: 1px 1px 3px;
     box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
 button[type="submit"]:hover {
     box-shadow: 1px 1px gray, 2px 2px #53a7ea, 3px 3px #53a7ea;
     -webkit-transform: translateX(-3px);
     transform: translateX(-3px);
-}
-
-button[type="submit"] {
-    cursor: pointer;
 }
 
 input::placeholder {
@@ -262,7 +261,7 @@ footer {
         width: 80%;
         height: auto;
     }
-    label {
+    .col_1 label {
         width: 20%;
     }
     .last_label {
