@@ -172,12 +172,7 @@ textarea:hover {
     transform: translateX(-3px);
 }
 
-/* input[required]:invalid::after,
-input[required]:valid::after {
-background-color:green;
-}  */
-
-input[required]invalid::before {
+/* input[required]invalid::before {
     border: 1px solid red;
     outline: none;
     box-shadow: none;
@@ -192,7 +187,7 @@ input:invalid::after, input:-moz-ui-invalid::after {
     box-shadow: red;
     -moz-box-shadow: red;
     -webkit-box-shadow: red;
-}
+} */
 
 select {
     -webkit-appearance: none;
