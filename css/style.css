@@ -117,7 +117,7 @@ input[type="radio"] {
     border-radius: 100%;
 }
 
-input[type="number"] {
+#zip_code{
     width: 30%;
 }
 
