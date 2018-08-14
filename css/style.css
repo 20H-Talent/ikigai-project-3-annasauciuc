@@ -230,7 +230,7 @@ button[type="submit"]:hover {
 input::placeholder {
     color: #9ea1a3;
     font-size: 1em;
-    font-family: fantasy;
+    /* font-family: fantasy; */
     font-style: italic;
     text-align: right;
 }
