@@ -169,11 +169,16 @@ input:not([type='checkbox']):not([type='radio']):focus, textarea:focus, select:f
 }
 textarea {
     resize: vertical; /* user can resize vertically, but width is fixed */
+    max-height:10rem;
+    min-height: 10rem;
+    height:10rem;
+    transition: transform 1s ease;
   }
 textarea:hover {
     box-shadow: 1px 1px gray, 2px 2px, 3px 3px #53a7ea;
     -webkit-transform: translateX(-4px);
     transform: translateX(-3px);
+
 }
 
 /* input[required]invalid::before {
@@ -219,6 +224,7 @@ button {
     box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
     margin-bottom: 10px;
     cursor: pointer;
+    transition: transform 1s ease;
 }
 
 button[type="submit"]:hover {
